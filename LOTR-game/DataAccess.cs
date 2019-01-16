@@ -30,7 +30,7 @@ namespace LOTR_game
 
                 while (reader.Read())
                 {
-                    if (!list.Any(x => x.Id == reader.GetSqlInt32(0).Value))
+                    if (!list.Any(x => x.Id == reader.GetSqlInt32(0).Value)) //Riktigt snygg lösning för att kolla om ett id finns i databasen, jag copy-pastear den hehe
                     {
 
                         Card c = new Card
@@ -42,7 +42,7 @@ namespace LOTR_game
 
                         };
 
-                        if (!reader.IsDBNull(4) && !reader.IsDBNull(5))
+                        if (!reader.IsDBNull(4) && !reader.IsDBNull(5)) //Snygg hantering av null så att inte programmet blir argt =)
                         {
                             c.Attack = reader.GetSqlInt32(4).Value;
                             c.Health = reader.GetSqlInt32(5).Value;

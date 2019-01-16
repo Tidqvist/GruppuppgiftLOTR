@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LOTR_game
 {
-    public class Card
+    public class Card //Väldigt lätt att förstå vad de olika klasserna innebär och skillnaderna mellan dem, bra namn!
     {
         public int Id { get; set; }
         public string Name { get; set; }

@@ -244,7 +244,7 @@ namespace LOTR_game
             GameDeck = new Deck();
             GameDeck.PopulateDeck();
             GameDeck.Shuffle();
-            AddPlayersToGame();
+            AddPlayersToGame(); //TODO: Lägg till möjlighet att skapa nya spelare för varje omgång, just nu väljs två direkt från databasen 
 
             foreach (Player player in Players)
             {

@@ -22,27 +22,27 @@ namespace LOTR_game
             CardsInHand = new List<Card>();
             CardsOnBoard = new List<Card>() { null, null, null, null, null, null };
 
-            //for (int i = 0; i < 6; i++)
+            //for (int i = 0; i < 6; i++) -- //TODO: Gammal rest som blivit kvar eller feature to be implemented? ;) 
             //{
             //    CardsOnBoard[0] = null;
             //}
         }
 
-        public void LifeChanger()
+        public void LifeChanger() //TODO gissar jag =)
         {
 
         }
 
-        public void ResourceChanger()
+        public void ResourceChanger() //TODO gissar jag =)
         {
 
         }
 
         public Card PlayCard()
         {
-            Console.WriteLine("Which card do you want to play?");
+            Console.WriteLine("Which card do you want to play?"); //TODO: Lite otydligt vilken siffra som motsvarar vilket kort, samma sak när man ska välja var kortet ska placeras
             ConsoleKey playCardChoice = Console.ReadKey().Key;
-            int chosenCardIndex = (int)playCardChoice - (int)ConsoleKey.D1;
+            int chosenCardIndex = (int)playCardChoice - (int)ConsoleKey.D1; //TODO: Lägga till int.TryParse för att fånga upp elaka/klantiga användare som inte skriver in siffror, samt om man skriver in en siffra out of range
 
             Card chosenCard = CardsInHand[chosenCardIndex];
 
@@ -60,7 +60,7 @@ namespace LOTR_game
 
         }
 
-        public void ReceiveCard()
+        public void ReceiveCard() //Eller ska dom här vara tomma? I såna fall, förstår inte riktigt varför :D 
         {
 
         }
@@ -72,7 +72,7 @@ namespace LOTR_game
 
         public int SelectAttacker()
         {
-            Console.WriteLine("Which creature do you want to attack with?");
+            Console.WriteLine("Which creature do you want to attack with?"); //TODO: Här fattade jag inte vad jag skulle mata in, namnet eller en siffra och i så fall vilken? Tryckte på 1an men det hände inget, började skriva "F.." och då kraschade det
             ConsoleKey attackChoice = Console.ReadKey().Key;
             int chosenCardIndex = (int)attackChoice - (int)ConsoleKey.D1;
 

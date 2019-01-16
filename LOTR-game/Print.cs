@@ -48,8 +48,8 @@ namespace LOTR_game
 
         public void PlayChoices()
         {
-            Console.WriteLine("Choose action: ");
-            Console.WriteLine("1. Play a card");
+            Console.WriteLine("Choose action: "); //TODO: Lägg till ny rad innan "Choose action"
+            Console.WriteLine("1. Play a card"); //TODO: 1an skrivs ut på skärmen efter jag har valt den på samma rad som nästa instruktionstext
             Console.WriteLine("2. Attack with a creature");
             Console.WriteLine("3. End your turn");
         }
@@ -59,7 +59,7 @@ namespace LOTR_game
             Console.Clear();
 
 
-            Console.Write($"{game.Players[0].Name,-10}: ");
+            Console.Write($"{game.Players[0].Name,-10}: "); //TODO: Väldigt långt avstånd mellan spelarens namn och semikolon
             Console.Write($"LifePoints: {game.Players[0].LifePoints} Resources: {game.Players[0].Resources}");
             Console.WriteLine();
             Console.WriteLine();

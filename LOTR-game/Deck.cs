@@ -21,7 +21,7 @@ namespace LOTR_game
 
         public void Shuffle()
         {
-            PlayingDeck = PlayingDeck.OrderBy(c => Guid.NewGuid()).ToList();
+            PlayingDeck = PlayingDeck.OrderBy(c => Guid.NewGuid()).ToList(); //Riktigt trevlig lösning, den hade jag redan copy pasteat hehe
         }
 
         public Card DrawCard()

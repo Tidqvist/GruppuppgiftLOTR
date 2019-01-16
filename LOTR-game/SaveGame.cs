@@ -8,6 +8,6 @@ namespace LOTR_game
 {
     public class SaveGame
     {
-        
+        //Vad gör den här? 
     }
 }
